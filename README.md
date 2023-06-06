@@ -4,10 +4,11 @@
 
 <h2>Description<h2>
 
-Vivid Escapes is an online travel blog where you can gather inspiration and advice for future travels.
+<p>Vivid Escapes is an online travel blog where you can gather inspiration and advice for future travels.</p>
 
-The site features following interactable activities.
+<p>The site features following interactable activities.</p>
 
+<p>
 ☀️ Option to subscribe to posts. (Index)
 ☀️ Toggle image slider to view more of the latest posts. (Index)
 ☀️ Get information on different locations, and view the most popular attractions. (Review)
@@ -16,6 +17,7 @@ The site features following interactable activities.
 ☀️ Find promo codes for cheaper travels. (Promos)
 ☀️ Learn more about the author. (About me)
 ☀️ Contact the author by message. (Contact me)
+</p>
 
 <h2>Programs</h2>
 
