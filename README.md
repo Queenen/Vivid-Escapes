@@ -1,6 +1,6 @@
 # Your project title
 
-<a href="https://ibb.co/mFvBtHr"><img src="https://i.ibb.co/93wv2qm/vivid-escapes.png" alt="vivid-escapes" border="0"></a>
+<img src="https://i.ibb.co/93wv2qm/vivid-escapes.png" alt="vivid-escapes" border="0">
 
 A simple overview of the use/purpose of the project.
 
