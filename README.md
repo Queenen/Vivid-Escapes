@@ -1,65 +1,59 @@
-# Your project title
+<h1>Vivid Escapes</h1>
 
 <img src="https://i.ibb.co/93wv2qm/vivid-escapes.png" alt="vivid-escapes" border="0">
 
-A simple overview of the use/purpose of the project.
+<h2>Description<h2>
 
-## Description
+Vivid Escapes is an online travel blog where you can gather inspiration and advice for future travels.
 
-Add a more detailed description of what your project entails and set out to do.
+The site features following interactable activities.
 
-You can add some bullet points if you'd like to:
+☀️ Option to subscribe to posts. (Index)
+☀️ Toggle image slider to view more of the latest posts. (Index)
+☀️ Get information on different locations, and view the most popular attractions. (Review)
+☀️ Learn useful traveling tips. (Guides)
+☀️ Enlarge the photo by clicking it. (Post)
+☀️ Find promo codes for cheaper travels. (Promos)
+☀️ Learn more about the author. (About me)
+☀️ Contact the author by message. (Contact me)
 
-- List item 1
-- List item 2
-- List item 3
+<h2>Programs</h2>
 
-## Built With
+The site is build with the following:
 
-You can list a the tech stack that you've used over here
+- Visual Studio Code (https://code.visualstudio.com/)
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+Other programs used:
 
-## Getting Started
+- Figma (https://www.figma.com/)
+- Paint.NET (https://www.getpaint.net/)
 
-### Installing
+<h2>How to install</h2>
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+1. Clone the github repo:
 
-1. Clone the repo:
+https://github.com/Queenen/Vivid-Escapes
+<> Code -> Clone with preferred method
 
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
+2. Install necessary programs:
 
-2. Install the dependencies:
+- Visual Studio Code (https://code.visualstudio.com/)
 
-```
-npm install
-```
+3. Open program.
 
-### Running
+4. File -> Open folder (choose the project folder).
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+<h2>Contributing</h2>
 
-To run the app, run the following commands:
+-
 
-```bash
-npm run start
-```
+<h2>Contact</h2>
 
-## Contributing
+You may contact me through the following:
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+<a href="https://www.facebook.com/profile.php?id=100074747406376"><img src="https://i.ibb.co/mRhmfHQ/facebook-1.png" alt="view facebook profile" border="0"></a>
 
-## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+<a href="https://discordapp.com/users/745913715898974268"><img src="https://i.ibb.co/yWFBzKJ/discord-1.png" alt="view discord profile" border="0"></a>
 
 ## License
 
