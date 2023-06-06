@@ -31,8 +31,6 @@ Vivid Escapes is an online travel blog where you can gather inspiration and advi
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 - [Github Repo](https://github.com/Queenen/Vivid-Escapes)
 - <> Code -> Download ZIP
