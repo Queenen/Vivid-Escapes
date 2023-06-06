@@ -1,0 +1,844 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+* > * {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --navigation: #f1efee;
+  --button: #035e5b;
+  --button-hover: #023a4a;
+  --overlay: rgb(213, 213, 213);
+  --light-gray: rgb(236, 236, 236);
+}
+
+@font-face {
+  font-family: "Lato_bold";
+  src: url(/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: "Ledger";
+  src: url(/fonts/Ledger-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Lato_italic";
+  src: url(/fonts/Lato-Italic.ttf);
+}
+
+body {
+  font-family: "Lato";
+  scroll-behavior: smooth;
+}
+
+p,
+label,
+input,
+button,
+textarea,
+li {
+  font-size: 1.6rem;
+}
+
+a,
+h3 {
+  text-decoration: none;
+  color: black;
+  font-family: "Ledger";
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.icon {
+  width: 2rem;
+}
+
+.bold,
+label {
+  font-family: "Lato_bold";
+}
+
+input,
+textarea {
+  font-family: "Lato";
+}
+
+.italic {
+  font-family: "Lato_italic";
+  color: var(--button-hover);
+}
+
+button,
+.button {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-style: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: var(--button);
+  font-family: "Lato_bold";
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.error {
+  display: none;
+  color: #a30000;
+  font-size: 1.2rem;
+  font-family: "Lato";
+}
+
+.red {
+  color: red;
+  font-family: "Lato";
+  margin-bottom: 1rem;
+}
+
+.loading_error {
+  display: block;
+  padding: 3rem 5rem;
+}
+
+.green {
+  color: green;
+}
+
+.pointer:hover,
+.open_menu:hover,
+.close_menu:hover,
+.progress_bar .dot,
+button:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+hr {
+  border: 1.5px solid whitesmoke;
+}
+
+.hero {
+  position: relative;
+}
+.hero_img {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+
+.hero_title {
+  position: absolute;
+  font-family: "Ledger";
+  left: 6rem;
+  top: 90%;
+  transform: translate(-25%, -50%);
+}
+
+/* loader */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* HEADER */
+
+header {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  width: 60%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: right;
+  top: 90%;
+  right: 0;
+  z-index: 2;
+  padding-top: 2rem;
+  background-color: rgba(245, 245, 245, 0.636);
+  border-radius: 1rem 0 0 1rem;
+}
+
+header nav a {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 3rem 0.5rem 5rem;
+}
+
+/* INDEX */
+
+/* subscribe section */
+.subscribe {
+  font-family: "Lato_bold";
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: var(--navigation);
+}
+
+.subscribe_button {
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+  border: 2px solid var(--button);
+  color: var(--button);
+  padding: 0.7rem 0;
+}
+
+.subscribe_button:hover {
+  background-color: #035e5b29;
+}
+
+.subscribed {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.subscribed p:first-child {
+  margin-bottom: 1rem;
+  color: var(--button);
+}
+.sub_input {
+  width: 70%;
+  align-self: center;
+  margin-right: 1rem;
+}
+
+.sub_input input {
+  padding: 0.25rem;
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+.sub_input label {
+  display: inline-block;
+  width: 20%;
+}
+.sub_name {
+  margin-bottom: 1rem;
+}
+
+.sub_info {
+  margin-top: 1rem;
+}
+
+.sub_info p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sub_info {
+  width: auto;
+}
+
+/* post slider */
+.index_posts {
+  padding: 5rem;
+  background-color: whitesmoke;
+}
+.index_posts h2 {
+  margin-bottom: 7rem;
+}
+.post_container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.post_container .loader {
+  margin-bottom: 1rem;
+}
+.progress_bar {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto 1rem auto;
+  max-width: 20rem;
+}
+.dot {
+  display: none;
+  background-color: lightgrey;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.selected {
+  background-color: gray;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 3rem;
+  background-color: var(--navigation);
+}
+
+footer a:hover,
+header nav a:hover,
+.return:hover {
+  text-decoration: line-through;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+/* PROMOS */
+
+.promo_info {
+  padding: 5rem;
+  line-height: 2rem;
+  background-color: whitesmoke;
+}
+.promo_info > * {
+  display: block;
+  margin: 0 auto;
+  max-width: 25rem;
+}
+.promo_info h2 {
+  font-family: "Ledger";
+  margin-bottom: 2rem;
+}
+.promo_info h3,
+.promo_section h3 {
+  font-family: "Lato_bold";
+  margin-bottom: 2rem;
+}
+.coupon {
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.coupon:nth-child(odd) {
+  border-bottom: 0.2rem solid whitesmoke;
+}
+.coupon div {
+  width: 60%;
+}
+.promo_logo {
+  width: 10rem;
+  align-self: center;
+  margin-right: 2rem;
+}
+
+/* ABOUT */
+.about_introduction,
+.about_info {
+  max-width: 25rem;
+  padding: 5rem 0;
+  display: block;
+  margin: 0 auto;
+  line-height: 2.5rem;
+}
+
+.about_introduction h3:nth-child(2),
+.about_info p.bold {
+  margin-bottom: 2rem;
+}
+
+.about_introduction h2 {
+  font-family: "Ledger";
+}
+
+/* CONTACT */
+.contact_intro {
+  padding: 5rem;
+  line-height: 2.5rem;
+  background-color: whitesmoke;
+}
+
+.contact_intro > * {
+  max-width: 25rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact_intro h2 {
+  font-family: "Ledger";
+  margin-bottom: 2rem;
+}
+
+.contact_form h2 {
+  font-family: "Ledger";
+  margin-bottom: 5rem;
+}
+
+.contact_form {
+  display: block;
+  margin: 5rem auto;
+  max-width: 25rem;
+}
+
+.contact_form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.contact_form input,
+.contact_form textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: whitesmoke;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.contact_form button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact_form textarea {
+  resize: none;
+  height: 100px;
+  margin-bottom: 3rem;
+}
+
+.message_sent h2 {
+  margin-left: -0.2rem;
+  margin-bottom: 2rem;
+}
+
+/* REVIEWS/GUIDE */
+
+.reviews {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.reviews .loader {
+  margin-top: 3.5rem;
+}
+
+.view-b_wrapper {
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: -7rem;
+  padding-bottom: 5rem;
+}
+
+.view-more,
+.view-less {
+  width: 50%;
+  left: 0;
+  right: 0;
+  background-color: whitesmoke;
+  color: var(--button);
+  border: 2px solid var(--button);
+  border-radius: 0.5rem;
+  position: absolute;
+  display: none;
+}
+
+.view-more:hover,
+.view-less:hover {
+  background-color: #035e5b31;
+  color: var(--button-hover);
+  border-color: var(--button-hover);
+}
+
+.post_card {
+  width: 80%;
+  line-height: 3rem;
+  background-color: white;
+  border-radius: 2rem;
+  height: fit-content;
+  padding-bottom: 3.5rem;
+  position: relative;
+  margin: 0 1rem 5rem 1rem;
+}
+
+.post_card center {
+  padding: 0 2rem;
+  height: 20rem;
+}
+
+.post_card button {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.post_card img {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.post_card .review_info {
+  margin: 2rem 0;
+  line-height: 2rem;
+  height: 6rem;
+}
+.post_title {
+  max-width: 25rem;
+  height: 7rem;
+}
+.review_info {
+  font-family: "Lato";
+}
+
+/* POSTS */
+
+.post_info {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%, 50%);
+  width: 80%;
+  z-index: 1;
+  text-align: center;
+  line-height: 3rem;
+}
+.post_info h1 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: "Lato_bold";
+}
+
+.post_info p {
+  letter-spacing: 0.2rem;
+  color: black;
+}
+.rg_tips,
+.rg_content {
+  padding: 5rem 5rem 5rem 5rem;
+  line-height: 2rem;
+}
+
+.rg_tips > *,
+.rg_content > * {
+  max-width: 25rem;
+  display: block;
+  margin: auto auto;
+}
+.hero_post {
+  background-color: var(--overlay);
+  width: auto;
+}
+
+.img_post {
+  opacity: 40%;
+}
+.return {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.return > * {
+  max-width: 25rem;
+}
+
+.return img {
+  margin-right: 1rem;
+}
+.description h2 {
+  margin: 5rem 0 3rem 0;
+}
+
+.description ol {
+  margin-top: 4rem;
+  line-height: 2.5rem;
+}
+
+.description li:nth-child(even) {
+  color: var(--button);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 5% auto;
+}
+
+.close {
+  color: #ccc;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {
+  .coupon div {
+    text-align: right;
+  }
+  .icon {
+    width: 4.5rem;
+  }
+  .logo {
+    width: 40%;
+  }
+  .sub_input input {
+    width: 70%;
+  }
+  .sub_info {
+    margin-top: -0.5rem;
+  }
+  .subscribe {
+    padding: 2rem 20%;
+  }
+  .post_card {
+    width: 50%;
+  }
+  header nav a {
+    padding-right: 4rem;
+  }
+}
+
+/*Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .error button {
+    font-size: 1.4rem;
+  }
+  a,
+  h3 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h1,
+  .post_info h1 {
+    font-size: 2.5rem;
+  }
+  .promo_logo {
+    width: 15rem;
+  }
+  .hero_img,
+  .hero {
+    height: 400px;
+    object-fit: cover;
+  }
+  .index_img {
+    object-position: 50% 25%;
+  }
+  .hero_title {
+    left: 7rem;
+  }
+  .sub_input input {
+    width: 70%;
+  }
+  .sub_input {
+    margin-right: 1rem;
+  }
+  .sub_info {
+    width: 40%;
+    margin-top: 0.5rem;
+  }
+  .sub_input label {
+    margin-right: 1rem;
+  }
+
+  .subscribe {
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    top: 280px;
+    width: 50%;
+    border-top-right-radius: 2rem;
+    height: 12rem;
+  }
+  .contact_intro > *,
+  .contact_form,
+  .about_introduction,
+  .about_info,
+  .promo_info > *,
+  .rg_tips > *,
+  .rg_content > * {
+    max-width: 40rem;
+  }
+  .post_card {
+    width: 40%;
+  }
+  .subscribe .loader {
+    margin-top: 1.5rem;
+  }
+  header nav {
+    padding-top: 0.5rem;
+  }
+  header nav a {
+    margin: 1.5rem 0;
+  }
+  .dot {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .progress_bar {
+    margin-top: 7rem;
+    max-width: 30rem;
+  }
+  .view-b_wrapper {
+    padding: 2rem 0 10rem 0;
+  }
+
+  .message_sent p {
+    margin-left: 0;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) {
+  .index_posts {
+    padding: 4rem 6rem;
+  }
+  .reviews {
+    padding: 5rem 3rem;
+  }
+  .post_card {
+    width: 30%;
+    margin-bottom: 3rem;
+  }
+  .hero_title {
+    left: 8rem;
+  }
+  .progress_bar {
+    margin-bottom: 2rem;
+  }
+  .view-b_wrapper {
+    padding-top: 5rem;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {
+  .error,
+  button {
+    font-size: 1.6rem;
+  }
+  p,
+  label,
+  input,
+  textarea,
+  li {
+    font-size: 1.8rem;
+  }
+  a,
+  h3 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h1,
+  .post_info h1 {
+    font-size: 3.5rem;
+  }
+  header nav {
+    padding: 2rem 0;
+  }
+  header nav a {
+    padding-right: 4.5rem;
+  }
+  .hero_title {
+    left: 9rem;
+  }
+}

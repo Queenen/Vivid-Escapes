@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reach out any time, I'd love to help!" />
+    <title>Contact | Vivid Escapes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="/js/script.js"></script>
+    <script defer src="/js/contact.js"></script>
+    <!-- Hotjar Tracking Code for Vivid Escapes -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3479367, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="/images/logo/vivid-escapes_logo.PNG"
+          alt="vivid escapes logo"
+          class="logo"
+      /></a>
+      <img
+        src="/images/icons/menu.svg"
+        alt="open menu"
+        class="icon open_menu" />
+      <img
+        src="/images/icons/cross.svg"
+        alt="close menu"
+        class="icon close_menu" />
+      <nav>
+        <a href="guides.html">GUIDES</a>
+        <a href="reviews.html">REVIEWS</a>
+        <a href="promos.html">PROMOS</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1 class="hero_title">CONTACT</h1>
+      <img
+        src="/images/hero/contact.jpg"
+        alt="small cottage in the sunset"
+        class="hero_img" />
+    </section>
+    <section class="contact_intro">
+      <h2>ASK AWAY</h2>
+      <p>
+        Planning a trip in the future? Feel free to ask me for advice, I'd love
+        to give you some recommendations!
+      </p>
+    </section>
+    <form class="contact_form">
+      <h2>CONTACT</h2>
+      <div>
+        <label for="c_name">Full name</label>
+        <p class="error c_name_error">Please enter at least 5 characters</p>
+        <input type="text" id="c_name" required />
+      </div>
+      <div>
+        <label for="c_email">Email</label>
+        <p class="error c_email_error">Please enter a valid email adress</p>
+        <input type="email" id="c_email" required />
+      </div>
+      <div>
+        <label for="c_subject">Subject</label>
+        <p class="error c_subject_error">Please enter at least 15 characters</p>
+        <input type="text" id="c_subject" required />
+      </div>
+      <div>
+        <label for="c_message">Message</label>
+        <p class="error c_message_error">Please enter at least 25 characters</p>
+        <textarea id="c_message"></textarea>
+      </div>
+      <button type="submit" class="c_button">SEND MESSAGE</button>
+    </form>
+
+    <footer>
+      <div>
+        <a href="contact.html">CONTACT ME</a>
+        <a href="about.html">ABOUT ME</a>
+      </div>
+      <p>© Vivid Escapes. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
