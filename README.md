@@ -1,67 +1,70 @@
-<h1>Vivid Escapes</h1>
+# Your project title
 
 <img src="https://i.ibb.co/93wv2qm/vivid-escapes.png" alt="vivid-escapes" border="0">
 
-<h2>Description<h2>
+A simple overview of the use/purpose of the project.
 
-<p>Vivid Escapes is an online travel blog where you can gather inspiration and advice for future travels.</p>
+## Description
 
-<p>The site features following interactable activities:</p>
+Add a more detailed description of what your project entails and set out to do.
 
-<ul>
-<li>☀️ Option to subscribe to posts. (Index)</li>
-<li>☀️ Toggle image slider to view more of the latest posts. (Index)</li>
-<li>☀️ Get information on different locations, and view the most popular attractions. (Review)</li>
-<li>☀️ Learn useful traveling tips. (Guides)</li>
-<li>☀️ Enlarge the photo by clicking it. (Post)</li>
-<li>☀️ Find promo codes for cheaper travels. (Promos)</li>
-<li>☀️ Learn more about the author. (About me)</li>
-<li>☀️ Contact the author by message. (Contact me)</li>
-<ul>
+You can add some bullet points if you'd like to:
 
-<h2>Programs</h2>
+- List item 1
+- List item 2
+- List item 3
 
-<b>The site is build with the following:</b>
+## Built With
 
-<a href="https://code.visualstudio.com">Visual Studio Code</a>
+You can list a the tech stack that you've used over here
 
-<b>Other programs used:</b>
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
 
-<a href="https://www.figma.com">Figma</a>
-<a href="https://www.getpaint.net">Paint.NET</a>
+## Getting Started
 
-<h2>How to install</h2>
+### Installing
 
-<ol>
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-<li>Clone the github repo:
+1. Clone the repo:
 
-<a href="https://github.com/Queenen/Vivid-Escapes">Vivid Escapes Github Repo</a>
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
 
-<> Code -> Clone with preferred method</li>
+2. Install the dependencies:
 
-<li>Install the necessary programs:
+```
+npm install
+```
 
-<a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+### Running
 
-<li>Open program</li>
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
-<li>File -> Open folder (choose the project folder)</li>
-</ol>
+To run the app, run the following commands:
 
-<h2>Contributing</h2>
+```bash
+npm run start
+```
 
--
+## Contributing
 
-<h2>Contact</h2>
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
-<p>You may contact me through the following:</p>
+## Contact
 
-<a href="https://www.facebook.com/profile.php?id=100074747406376"><img src="https://i.ibb.co/mRhmfHQ/facebook-1.png" alt="view facebook profile" border="0"></a>
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-<a href="https://discordapp.com/users/745913715898974268"><img src="https://i.ibb.co/yWFBzKJ/discord-1.png" alt="view discord profile" border="0"></a>
+[My Twitter page](www.twitter.com)
 
-<h2>Acknowledgments</h2>
+[My LinkedIn page](www.linkedin.com)
 
-<a hrref="https://developer.mozilla.org/en-US/">MDN</a>
-<a href="https://chat.openai.com/">ChatGPI</a>
+## License
+
+You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+
+## Acknowledgments
+
+This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
